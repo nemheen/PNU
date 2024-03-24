@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {
+            font-family: "Roboto", sans-serif}
+        body {
+          background: rgb(204,204,204); 
+          width: 21cm;
+          height: 29.7cm;
+          margin: 0 auto;
+        }
+        html {
+            font-size:  100%;
+        }
+        page {
+          background: white;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 0.5cm;
+          position: relative;
+        }
+
+        page[size="A4"] {  
+          width: 21cm;
+          height: 29.7cm; 
+        }
+
+        @page {
+          size: 21cm 29.7cm;
+          margin: 0mm;
+        }
+        .container {
+            position: relative;
+            background: #ffffff;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .leftPanel {
+            display: flex;
+            width: 25%;
+            color: white;
+            background: #b7b7b7;
+            padding: 40px;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            align-self: stretch; /* Align the left panel at the start */
+        }
+
+        .rightPanel {
+            
+            display: flex;
+            width: 75%;
+            padding: 40px;
+            flex-direction: column;
+            position: relative;
+            align-items: left;
+            color: rgb(90, 89, 89);
+
+        }
+
+
+        .name {
+            margin-left: 350px;
+        }
+
+        .name h1 {
+            margin: 0; /* Remove default margin for the name */
+        }
+    
+        .about {
+            color: rgb(90, 89, 89);
+            align-self: flex-start; /* Align to the start (left) */
+        
+        }
+        br.separator {
+            width: 25px;
+            height: 1px;
+            color: #ffffff;
+        }
+        .leftPanel .smallText, 
+        .leftPanel .smallText, 
+        .leftPanel .smallText span, 
+        .leftPanel .smallText p, 
+        .smallText a {
+        font-size: 0.4cm;
+        }
+        .smallText, 
+        .smallText span, 
+        .smallText p, 
+        .smallText a {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: justify;
+        }
+        .contactIcon {
+        width: 0.5cm;
+        text-align: center;
+        }
+
+        .leftPanel, 
+        .leftPanel a {
+        color: rgb(90, 89, 89);
+        text-decoration: none;
+        }
+        .skills-container {
+            width: 100%;
+            margin: 2px;
+            text-align: left;
+            
+        }
+       
+        .skills {
+            border: 1px solid rgb(27, 27, 27);
+            height: 12px;
+            background-color: rgb(90, 89, 89);
+        }
+
+        .html {width: 90%; background-color: rgb(90, 89, 89);} /* Green */
+        .css {width: 80%; background-color: rgb(90, 89, 89);} /* Green */
+        .js {width: 65%; background-color: rgb(90, 89, 89);} /* Green */
+        .python {width: 80%; background-color: rgb(90, 89, 89);} /* Green */
+        .java {width: 60%; background-color: rgb(90, 89, 89);} 
+        .mon {width: 100%; background-color: rgb(90, 89, 89);} 
+        .eng {width: 95%; background-color: rgb(90, 89, 89);} 
+        .kor {width: 60%; background-color: rgb(90, 89, 89);} 
+
+        
+        .title {
+            font-size: 0.3em;
+            margin: 5px;
+            font-family: 'Source Sans Pro', sans-serif;
+            
+        }
+        h5 {
+            color: black;
+            margin: 10px 5px 10px;
+            padding: 0;
+        }
+        h6 {
+            margin: 5px;
+            padding: 0;
+            font-weight: bold;
+        }
+        h6 span {
+            font-size: 0.25cm;
+            font-style: italic;
+            font-weight: normal;
+        }
+        .line {
+            display: inline-block;
+            height: 1px;
+            width: 18px;
+            background-color: black;
+            vertical-align: middle;
+            margin-top: 0.2em; 
+            margin-bottom: 0.2em; 
+        }
+
+        .content {
+            font-size: 0.22cm;
+            color: rgb(102, 101, 101);
+        }
+
+        .time {
+            font-size: 0.2em;
+            margin: 0;
+            color: rgb(163, 161, 161);
+        }
+
+        .strong {
+            font-size: 0.3em;
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body>
+    <page size="A4">
+        <div class="container">
+            
+            
+                <div class="leftPanel">
+                    
+                    <div class="about">
+                        <h2 class="contact">
+                            Contact
+                        </h2>
+                        <div class="smallText">
+                            <p>
+                              <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
+                              (+976) 95214109
+                            </p>
+                            <p>
+                              <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
+                              <a href="sharon.nemhee@gmail.com" class="email">
+                                sharon.nemhee@gmail.com
+                              </a>
+                            </p>
+                            <p>
+                              <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>
+                              Busan, South Korea
+                            </p>
+                            <p>
+                              <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
+                              <a href="#">
+                                in/loremipsum
+                              </a>
+                            </p>
+                            <p class="lastParagrafNoMarginBottom">
+                              <i class="fa fa-skype contactIcon" aria-hidden="true"></i>
+                              <a href="#">
+                                loremipsum
+                              </a>
+                            </p>
+                          </div>
+                        <br class="separator">
+    
+                        <h2>
+                            Skills
+                        </h2>
+                        <div class="skills-container">
+                            HTML
+                            <div class="skills html"></div>
+                            C/C++
+                            <div class="skills css"></div>
+                            Javascript
+                            <div class="skills js"></div>
+                            Python
+                            <div class="skills python"></div>
+                            Java
+                            <div class="skills java"></div>
+                        </div>
+                        <br class="separator">
+                        <h2 class="lang">
+                            Languages
+                        </h2>
+                        Mongolian
+                        <div class="skills mon"></div>
+                        English
+                        <div class="skills eng"></div>
+                        Korean
+                        <div class="skills kor"></div>
+                        
+                    </div>
+    
+                </div>
+    
+                
+                <div class="rightPanel">
+                    <div class="about-me">
+                        <h2 class="about-me">
+                            Nemekhbayar Nomin
+                        </h2>
+                        <p class="content">
+                            A Computer Science student with a knuckle of experience but a strong passion for the field. Seeking opportunities to leverage my technical skills and educational background to contribute to the development and growth of innovative projects.
+                        </p>
+                    </div>
+                    
+                    <div class="bar" id="edu">
+                        <p class="title">SKILLS</p>
+                        <p class="strong">DATA SCIENCE <div class="line"></div> <span> Python, R, Pandas, NumPy, SciPy, Scikit-learn</span></p>
+                        <h6>MACHINE LEARNING <div class="line"></div> <span>TensorFlow, Keras, PyTorch, Scikit-learn</span></h6>
+                        <h6>DATA VISUALIZATION <div class="line"></div> <span>Matplotlib, Seaborn, Plotly</span></h6>
+                        <h6>STATISTICS <div class="line"></div> <span>Statistical Analysis, Hypothesis Testing</span></h6>
+                        <h6>DATABASE <div class="line"></div> <span>SQL, MongoDB</span></h6>
+                        <h6>PROGRAMMING <div class="line"></div> <span>Python, Javascript, C++, C</span></h6>
+                        <h6>OTHER TOOLS <div class="line"></div> <span>Jupyter Notebook, Git, Docker</span></h6>
+                    </div>
+                    
+                    <div class="bar" id="work">
+                        <p class="title">EXPERIENCE</p>
+                        <p>Orkhon Empathy School <div class="line"></div> <span>Mathematics teacher</span></p>
+                        <p class="time">Jan 2022 - Aut 2022</p>
+                        <p class="content">Developed and implemented lesson plans to effectively teach mathematical concept to high school students. Provided individualized support and assistance to students to enhance their understanding and performance in university entrance exam and olympiad competitions.</p>
+                    </div>
+
+                    <div class="bar" id="skills">
+                
+                        <p class="title">PROJECTS</p>
+                        <h6>Pet feeder/Gesture Controlled michrophone</h6>
+                    </div>
+                    <!-- <div class="bar" id="experience">
+                        <h3>Education</h3>
+                    </div> -->
+                    
+                </div>
+
+            
+        </div>
+    </page>
+</body>
+</html>

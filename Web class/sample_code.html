@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Assignment 6: sample code</title>
+<script>
+    function myNumber(x, y) {
+        // find out where to print text
+        let msg = document.getElementById("placeForLuckyNumber");
+        // set the text so that it prints out on the web page
+       
+        msg.innerHTML = x + y ;
+
+    }
+    function myMusic(){
+        // find out where to print text
+        let msg = document.getElementById("placeForFavoriteSong");
+
+        // ask a question and save the answer
+        let answer = prompt("Your favorite song?", "One call away");
+        
+        // set the text so that it prints out on the web page
+        msg.innerHTML = answer;		  
+    }
+</script>
+</head>
+<body>
+    <hr>
+    
+    My lucky number = ?
+    <div id="placeForLuckyNumber"></div>
+    <button onclick="myNumber(10, 20)">Lucky Number</button>
+
+    <hr>
+    
+    My favorite song = ?
+    <div id="placeForFavoriteSong"></div>
+    <button onclick="myMusic()">Song</button>
+    
+    <hr>
+</body>
+</html>

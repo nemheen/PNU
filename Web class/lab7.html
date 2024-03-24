@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Assignment 6: sample code</title>
+<script>
+    function sum() {
+        let msg = document.getElementById("sumup");
+        let num = Number.parseInt(prompt("Enter an integer(>0)", "0"));
+        let i=0, sum=0, evensum=0, oddsum=0;
+        do {
+            sum +=i;
+            i++;
+            if(i%2===0) {
+                evensum +=i;
+            }
+            else {
+                oddsum +=i;
+            }
+        }while(i<=num) ;
+
+        msg.innerHTML = "Number you entered: " + num + "<br>";
+        msg.innerHTML += "Sum of all numbers: " + sum + "<br>";
+        msg.innerHTML += "Sum of even numbers: " + evensum + "<br>";
+        msg.innerHTML += "Sum of odd numbers: " + oddsum + "<br>";
+
+    }
+        
+    function intro() {
+        let name = prompt("Enter your name:");
+		let major = prompt("Enter your department/major:");
+
+		if (name && major) {
+			document.write("Hello<span style='background-color: yellow; color: red;'>,</span> my name is " + name + " <span style='background-color: yellow; color: red;'>and</span> my major is " + major + "<span style='background-color: yellow; color: red;'>.</span>");
+		} else if (name && !major) {
+			document.write("Hello<span style='background-color: yellow; color: red;'>,</span> my name is " + name + "<span style='background-color: yellow; color: red;'>.</span>");
+		} else if (!name && major) {
+			document.write("Hello<span style='background-color: yellow; color: red;'>,</span> my major is " + major + "<span style='background-color: yellow; color: red;'>.</span>");
+		} else {
+			document.write("Hello<span style='background-color: yellow; color: red;'>!</span>");
+		}
+    }
+
+
+
+    function getMax(){
+        // find out where to print text
+        let msg = document.getElementById("hobby");
+
+        // ask a question and save the answer
+        let num1 = Number.parseInt(prompt("Enter your first integer here", "0"));
+        let num2 = Number.parseInt(prompt("Enter your second integer here", "0"));
+        
+
+        if(num1 > num2 ) {
+            msg.innerHTML = num1 + " is greater than " + num2 + "<br>";
+        }
+        else if(num1 < num2 ) {
+            msg.innerHTML = num1 + " is smaller than " + num2 + "<br>";
+        }
+        else {
+            msg.innerHTML = num1 + " and " + num2 + " are equal <br>";
+        }
+
+        if( answer != null) {
+            msg.innerHTML = "" + answer;
+        }
+        else {
+            msg.innerHTML = "cancelled";
+        }
+        
+
+        // set the text so that it prints out on the web page
+        //msg.innerHTML = answer !== null ? name : "Cancelled";
+        
+        
+    }
+    function generateTable() {
+			let number = Number.parseInt(prompt("Enter your first integer here", "0"));
+			let table = document.getElementById("table");
+
+			// clear previous table contents
+			table.innerHTML = "";
+
+			
+			
+			// create table data rows
+			for (let i = 1; i <= 2; i++) {
+				let dataRow = table.insertRow();
+			
+				for (let j = 0; j <= number+1; j++) {
+					let dataCell = dataRow.insertCell();
+                   
+                    if (i === 1) {
+                        if (j === 0) {
+                        dataCell.innerHTML = "<strong>n</strong>"; } 
+                        else {
+                        dataCell.innerHTML = j-1; }
+                    } 
+                    else {
+                    if (j === 0) {
+                        dataCell.innerHTML = "<strong>n^2</strong>";
+                    } else {
+                        dataCell.innerHTML = (j-1) * (j-1);
+                    }
+                }
+                    }
+		        }
+            }
+</script>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        
+    }
+    td {
+        height: 30px;
+        text-align: center;
+        width: 80px;
+    }
+    .p {
+        background-color: yellow;
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <h2>
+       Get two and return the max
+    </h2>
+    <hr>
+       
+        <div id="hobby"></div>
+        <button onclick="getMax()">Answer</button>
+ 
+    <hr>
+
+    <h2>
+        Getting squared numbers and making a table.<br>
+
+        Calculating n^2 from n=0~N
+
+    </h2>
+    <hr>
+    Enter a number: <span id="number"></span><br>
+    <br>
+	<table id="table"></table>
+	<button onclick="generateTable()">Generate Table</button>
+
+    <hr>
+   
+    <button onclick="intro()">Enter</button>
+    
+
+    <hr>
+
+    <h2>Getting even and odd sum</h2>
+
+    <hr>
+
+    
+    <div id="sumup"></div>
+    <button onclick="sum()">sum</button>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Assignment 6: sample code</title>
+<script>
+    function myNumber() {
+        // find out where to print text
+        let msg = document.getElementById("placeForLuckyNumber");
+        // set the text so that it prints out on the web page
+        msg.innerHTML = 777;
+    }
+     function add(x, y) {
+        // find out where to print text
+        let msg = document.getElementById("add");
+        // set the text so that it prints out on the web page
+        msg = x + y
+        msg.innerHTML = 30;
+    }
+    function mul() {
+        // find out where to print text
+        let msg = document.getElementById("mul");
+        // set the text so that it prints out on the web page
+        msg.innerHTML = 200;
+    }
+    function hobby
+        // find out where to print text
+        let msg = document.getElementById("placeForName");
+
+        // ask a question and save the answer
+        let answer = prompt("Enter your hobby here", "Skating");
+        
+        if( answer != null) {
+            msg.innerHTML = "" + answer;
+        }
+        else {
+            msg.innerHTML = "cancelled";
+        }
+
+        // set the text so that it prints out on the web page
+        //msg.innerHTML = answer !== null ? name : "Cancelled";
+        
+        
+    }
+    function myName(){
+        // find out where to print text
+        let msg = document.getElementById("placeForName");
+
+        // ask a question and save the answer
+        let answer = prompt("Enter your name here", "Jane Joe Doe");
+        
+        if( answer != null) {
+            msg.innerHTML = "" + answer;
+        }
+        else {
+            msg.innerHTML = "cancelled";
+        }
+
+        // set the text so that it prints out on the web page
+        //msg.innerHTML = answer !== null ? name : "Cancelled";
+        
+        
+    }
+</script>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+        width: 400px;
+    }
+    tr {
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+    <h2>
+        Tables and JavaScript Dialogs
+    </h2>
+    <hr>
+    <button onclick="window.alert('Do your best!')">See help!</button>
+    
+
+    <table>  
+        <tr style="height: 200px;">
+            <td>
+                10 + 20 = ?
+                <div id="add"></div>
+                <button onclick="add(10, 20)">Calculate1</button>
+            
+            </td>
+        
+            <td>
+                10 x 20 = ?
+            <div id="mul"></div>
+            <button onclick="mul()">Calculate2</button>
+            
+            </td>
+        </tr>  
+        <tr style="height: 200px;">
+            
+            <td>
+                My name is:
+            <div id="placeForName"></div>
+            <button onclick="myName()">Answer</button>
+            
+            </td>
+            <td>
+                My hobby is:
+                <div id="hobby"></div>
+                <button onclick="hobby()">Answer</button>
+            
+               
+            </td>
+            <td>
+                My lucky number = ?
+                <div id="placeForLuckyNumber"></div>
+                <button onclick="myNumber()">Lucky Number</button>
+
+            </td>
+
+        
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>

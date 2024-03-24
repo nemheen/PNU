@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {
+            font-family: "Roboto", sans-serif}
+        body {
+          background: rgb(204,204,204); 
+          width: 21cm;
+          height: 29.7cm;
+          margin: 0 auto;
+        }
+        html {
+            font-size:  100%;
+        }
+        page {
+          background: white;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 0.5cm;
+          position: relative;
+        }
+
+        page[size="A4"] {  
+          width: 21cm;
+          height: 29.7cm; 
+        }
+
+        @page {
+          size: 21cm 29.7cm;
+          margin: 0mm;
+        }
+        .container {
+            position: relative;
+            background: #ffffff;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .leftPanel {
+            
+            display: flex;
+            width: 35%;
+            color: rgb(77, 76, 76);
+            background: #b7b7b7;
+            padding: 20px;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            align-self: stretch; /* Align the left panel at the start */
+        }
+
+        .rightPanel {
+            background: white;
+            display: flex;
+            width: 65%;
+            padding: 20px;
+            flex-direction: column;
+            position: relative;
+            align-items: left;
+            color: black;
+
+        }
+        .item {
+            padding-bottom: 0.7cm;
+            padding-top: 0.7cm;
+        }
+        .rightPanel h2 {
+            color: black;
+        }
+        .item h2{
+            margin-top: 0;
+            font-size: medium;
+            color: rgb(60, 59, 59);
+        }
+
+        h2 {
+            font-family: 'Archivo Narrow', sans-serif;
+        }
+        .details {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .leftPanel .smallText, 
+        .leftPanel .smallText, 
+        .smallText a {
+            font-size: 0.45cm;
+        }
+        .smallText,
+        .smallText a {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: left;
+            color: rgb(94, 93, 93);
+            text-decoration: none;
+        }
+        .contactIcon {
+            width: 0.5cm;
+            text-align: center;
+        }
+        .smallText p {
+            margin: 0;
+        }
+        .smallText > p.phone {
+            font-weight: bold; /* Ensure bold font weight */
+            }
+
+        .smallText {
+            margin-bottom: 40px;
+        }
+        .smallText span {
+            font-weight: bolder;
+            padding: 0;
+            margin-bottom: 10px;
+            font-size: 0.6em;
+        }
+        .edu {
+            display: block;
+        }
+        .duration {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .leftPanel .smallText .time {
+            color: rgb(115, 114, 114);
+            font-size: 0.5em;
+        }
+        .title {
+            font-weight: bolder;
+            color: rgb(68, 68, 68);
+            margin-bottom: 20px;
+        }
+        /* span .title{
+            font-size: 0.em;
+            font-weight: bolder;
+            color: black;
+            margin-bottom: 20px;
+        } */
+        .content {
+            color: rgb(99, 98, 98);
+            font-size: 0.6em;
+        }
+        .item ul {
+            color: rgb(99, 98, 98);
+            
+        }
+        .rightPanel .smallText h6 {
+            font-size: 0.6em;
+            margin: 0 0 10px;
+        }
+        /* .rightPanel .smallText p {
+            font-size: 0.6rem;
+            margin-top: 2px;
+        } */
+        .rightPanel .smallText span.skill {
+            font-size: 0.7rem;
+            margin-top: 2px;
+            font-weight: bolder;
+        }
+        .rightPanel .smallText span.a {
+            font-size: 0.6rem;
+            margin-top: 2px;
+            font-weight: normal;
+        }
+        .rightPanel .smallText .about{
+            font-weight: bolder;
+            font-size: 0.6em;
+        }
+        .rightPanel .smallText p {
+            color: rgb(114, 114, 114);
+            font-size: 0.6em;
+        }
+        .rightPanel .smallText p.time {
+            font-size: 0.5rem;
+            color: rgb(115, 114, 114);
+        }
+        .edu {
+            margin-bottom: 10px;
+        }
+         </style>
+</head>
+<body>
+    <page size="A4">
+        <div class="container">
+            <div class="leftPanel">
+                <div class="details">
+                    <div class="smallText">
+                        <p class="address">부산광역시 금정구</p>
+                        <p class="address">수림로85번길 50, 202호</p>
+                        <p class="phone">(+82)1080995690</p>
+                        <p><a href="mailto:sharon.nemhee@gmail.com">sharon.nemhee@gmail.com</a></p>
+                        <p><a href="https://www.linkedin.com/in/nomin-nemekhbayar-0ab44b170/">Linkedin</a></p>
+                        <p><a href="https://github.com/nemheen">Github</a></p>
+                        
+                    </div>
+                      
+                   
+                    <div class="item">
+                        <h5>
+                            EDUCATION
+                        </h5>
+                        <div class="smallText">
+                            <div class="edu">
+                              <div>
+                                <span class="title">Pusan National University</span>
+                              </div>
+                              <div class="duration">
+                                <p class="content">B.S.,Computer Science </p>
+                                <p class="time">Sep 2019 - Current</p>
+                              </div>
+                            </div>
+                            <div class="edu">
+                              <div>
+                                <span class="title">Darkhan Empathy School</span>
+                              </div>
+                              <div class="duration">
+                                <p class="content">High School Diploma</p>
+                                <p class="time">Sep 2013 - Jun 2019</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                      
+                    <div class="item">
+                      <h2>
+                        AWARDS
+                      </h2>
+                      <div class="smallText">
+                        <div class="edu"> 
+                            <p><span>1st place</span> National mathematical Olympiad II stage</p>
+                        </div>
+                        <div>
+                            <p><span>JENESYS 2017</span> Student Exchange Program Finalist</p>
+                        </div></div>
+                    </div>
+
+                    <div class="item">
+                        <h2>
+                          LANGUAGES
+                        </h2>
+                        <ul>
+                            <li>English(Fluent)</li>
+                            <li>Mongolian(Fluent)</li>
+                            <li>Korean(Intermediate)</li>
+                        </ul>
+                      </div>
+
+                </div>
+
+
+            </div>
+            <div class="rightPanel">
+                <h1>Nemekhbayar Nomin</h1>
+                <div class="smallText">
+                    <div class="about">
+                        A Computer Science student with a knuckle of experience. Seeking opportunities to leverage my technical skills and to contribute to the development and growth of innovative projects.
+                    </div>
+                </div>
+                <div class="smallText">
+                    <h6>
+                       SKILSS 
+                    </h6>
+                    <p><span class="skill">WEB DEVELOPMENT</span> <span class="a">HTML, Javascript, NodeJS, Express</span></p>
+                    <p><span class="skill">MACHINE LEARNING</span> <span class="a">TensorFlow, Keras, PyTorch, Scikit-learn</span></p>
+                    <p><span class="skill">DATA VISUALIZATION</span> <span class="a">Matplotlib, Seaborn, Plotly</span></p>
+                    <p><span class="skill">STATISTICS</span> <span class="a">Statistical Analysis, Hypothesis Testing</span></p>
+                    <p><span class="skill">DATABASE</span> <span class="a">SQL, MongoDB</span></p>
+                    <p><span class="skill">PROGRAMMING</span> <span class="a">Python, C, C++</span></p>
+                    <p><span class="skill">OTHER TOOLS</span> <span class="a">Jupyter Notebook, Git, Docker</span></p>
+
+                </div>
+                <div class="smallText">
+                    <h6>
+                        EXPERIENCE 
+                     </h6>
+                     <p><span class="skill">Orkhon Empathy School </span><span class="a">Mathematics teacher | Jan 2022 - Aut 2022</span></p>
+                     
+                     <p class="content">Developed and implemented lesson plans to effectively teach mathematical concept to high school students. Provided individualized support and assistance to students to enhance their understanding and performance in university entrance exam and olympiad competitions.</p>
+                     
+                    
+                </div>
+                <div class="smallText">
+                    <h6>
+                        PROJECTS 
+                     </h6>
+                     <div class="smallText">
+                        <p><span class="skill">Big Data Analysis on Plant Industries </span></p>
+                     
+                        <p class="content">Analyzed and visualized the data of plant industrial company report of Korean companies with the team of professor led by and implemented the time and duration of watering the plant to have more profit and lessen the lose. </p>
+                        
+                     </div>
+                     <div class="smallText">
+                        <p><span class="skill">House Price Prediction Model</span></p>
+                        <p class="content"> Investigating the application of deep learning architectures, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), for feature extraction and sequence modeling to enhance prediction accuracy and scalability.</p>
+                     </div>
+                     <div class="smallText">
+                        <p><span class="skill">Pet feeder and gesture controlled michrophone</span></p>
+                        <p class="content">Also did some hardware projects with STM32 board and Arduino Mega 2560. Integrating the communication with esp32 and arduino was the interesting and challanging parts. </p>
+                     </div>
+                </div>
+                
+            </div>
+        </div>
+    </page>
+</body>
+</html>
